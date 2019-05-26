@@ -1,0 +1,278 @@
+body{
+    background-color: rgb(10, 6, 14);
+    font-family: monospace;
+    margin: 0;
+}
+
+                    /*HEADER*/
+.header{
+    display: flex;
+    background-color: white;
+    opacity: 0.8;
+    height: 100px;
+}
+
+.header a{
+    text-decoration: none;
+    color: black;
+    opacity: 0.6;
+}
+
+.logo{
+    display: flex;
+    height: auto;
+}
+
+.logo img{
+    margin: auto ;
+    height: 30px;
+    width: 30px;
+    opacity: 1;
+}
+
+.logo a{
+    margin: auto 0px auto 5px;
+    font-size: 25px;
+    opacity: 1;
+}
+
+.header div{
+    margin: auto;
+    font-size: 20px;
+}
+
+.header a:hover{
+    opacity: 1;
+}
+
+.header:hover{
+    outline-style: auto;
+    outline-color: black;
+    outline-width: 10px;
+    opacity: 0.85;
+}
+
+                    /*ABOUT*/
+
+.about{
+    font-size: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    margin: 8% auto 0 auto;
+    opacity: 0.9;
+    height: 550px;
+}
+.aboutcontent{
+    margin: 5% 5%;
+    opacity: 0.9;
+    display: flex;
+    width: auto;
+    height: auto;
+}
+
+.about img{
+    flex-direction: row;
+    margin: 10% 10%;
+    height: 300px;
+    width: 200px;
+}
+
+.about p{
+    text-align: center;
+    margin: 10% 15%;
+    font-size: 20px;
+    color: white;
+}
+
+
+                    /*Hobbies*/
+
+.hobbies{
+    opacity: 0.9;
+    margin: 8% 15%;
+    display: block;
+}
+
+.hobbies p{
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin: 0 auto 20px auto;
+}
+
+.hobbylist {
+    display: flex;
+}
+
+.hobbylist div{
+    margin: 20px auto;
+}
+
+.hobbylist img{
+    width: 150px;
+    height: 150px;
+}
+
+@keyframes size{
+    0% {transform: scale(1)}
+    50% {transform: scale(1.2)}
+    100% {transform: scale(1)}
+}
+
+@keyframes size2{
+    0% {transform: scale(1)}
+    20% {transform: scale(0.9)}
+    70% {transform: scale(1.2)}
+    100% {transform: scale(1)}
+}
+
+.askills img:hover{
+    animation-name: size;
+    animation-duration: 1s;
+}
+
+.ahobbies img:hover{
+    animation-name: size2;
+    animation-duration: 1s;
+}
+                    /*projects*/
+.projects{
+    opacity: 0.9;
+    display: block;
+    margin: 8% 12%;
+    color: white;
+    text-transform: uppercase;
+}
+
+.prohead{
+    font-size: 35px;
+    text-align: center;
+    text-transform: uppe0rcase;
+    margin: 30px auto;
+}
+
+.pro{
+    display: flex;
+}
+
+.pro img{
+    margin: 6% auto;
+    height: 150px;
+}
+
+.pro p{
+    margin: auto;
+}
+
+@keyframes animate1{
+    0% {transform: scale(1)}
+    100% {transform: scale(1.5)}
+}
+
+@keyframes animate2{
+    0% {transform: rotatey(0deg)}
+    100% {transform: rotatey(360deg)}
+}
+
+.pro img:hover{
+    animation: animate2 1s,
+                animate1 1s 1s forwards;
+}
+
+
+                    /*contact*/
+.contact{
+    text-align: center;
+    display: block;
+    color: white;
+    opacity: 0.9;
+    margin : 8% auto 100px auto;
+}
+
+.icons{
+    display: flex;
+    margin: auto;
+    width: 200px;
+    background-color: white;
+    padding: 10px;
+    opacity: 0.9
+}
+
+.contact img{
+    height: 50px;
+    width: 50px;
+    opacity: 0.7;
+}
+
+.contact a{
+    margin: auto;
+}
+
+.contact h1{
+    text-transform: uppercase;
+}
+
+.contact a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.contact p{
+    font-size: 20px;
+    margin: 5px;
+}
+
+.contact img:hover{
+    opacity: 1;
+}
+
+.resume{
+    outline-style: auto;
+    opacity: 0.8;
+}
+
+.resume:hover{
+    opacity: 1;
+    font-size: 25px;
+    outline-style: none;
+}
+                    /*extras*/
+
+hr{
+    opacity: 0.4;
+    margin: 10px;
+}
+
+                    /*responsive rules*/
+
+@media screen and (max-width: 620px){
+    .about{
+        height: 900px;
+    }
+
+    .aboutcontent{
+        display: block;
+    }
+
+    .askills{
+        display: block;
+        margin: 100px auto;
+    }
+
+    .hobbylist{
+        display: block;
+        margin-left: 28%
+    }
+    
+    .header a{
+        display: none;
+    }
+
+    .logo a{
+        display: inline;
+    }
+}
